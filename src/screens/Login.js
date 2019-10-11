@@ -99,7 +99,7 @@ class Login extends Component {
                     <Button full
                         style={styles.buttonLogin}
                         disabled={!this.state.isValidLogin}
-                        onPress={() => this.props.navigation.navigate('Home')}
+                        onPress={() => this.props.navigation.navigate('ForYou')}
                     >
                         <Text style={styles.textButton}>Log In</Text>
                     </Button>

@@ -6,7 +6,7 @@ import {
     View,
 } from 'native-base';
 
-class Home extends Component {
+class Profile extends Component {
     render() {
         return (
             <Container style={styles.container}>
@@ -21,7 +21,7 @@ class Home extends Component {
     }
 }
 
-export default Home;
+export default Profile;
 
 const styles = StyleSheet.create({
     container: {
