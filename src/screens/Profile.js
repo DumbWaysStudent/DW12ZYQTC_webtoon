@@ -11,7 +11,7 @@ class Profile extends Component {
         return (
             <Container style={styles.container}>
                 <View style={styles.viewContent}>
-                    <Text style={styles.textTitle}>My Webtoon</Text>
+                    <Text style={styles.textTitle}>Comic Paper</Text>
                     <Text style={styles.textSubTitle}>
                         welcome happy reading
                     </Text>

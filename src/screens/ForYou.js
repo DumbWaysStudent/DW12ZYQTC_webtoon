@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { StyleSheet, FlatList, SafeAreaView, Image } from 'react-native';
+import { StyleSheet, FlatList, SafeAreaView, Image, TouchableOpacity } from 'react-native';
 import {
     Container,
     Text,
@@ -99,13 +99,14 @@ class ForYou extends Component {
                                     showsHorizontalScrollIndicator={false}
                                     data={this.state.banners}
                                     renderItem={({ item }) => (
-                                        <View style={styles.favItem}>
-                                            <Image
-                                                style={{ width: 100, height: 100, borderWidth: 3, borderColor: '#795548' }}
-                                                source={item.url}
-                                            />
-                                            <Text style={styles.favoriteTitle}>{item.title}</Text>
-                                        </View>
+                                        <TouchableOpacity onPress={() => this.props.navigation.navigate('DetailWebToon')}>
+                                            <View style={styles.favItem}>
+                                                <Image
+                                                    style={{ width: 100, height: 100, borderWidth: 3, borderColor: '#795548' }}
+                                                    source={item.url}
+                                                />
+                                                <Text style={styles.favoriteTitle}>{item.title}</Text>
+                                            </View></TouchableOpacity>
                                     )}
                                     keyExtractor={item => item}
                                 />
