@@ -57,7 +57,7 @@ class ForYou extends Component {
                             ? 0
                             : this.state.position + 1,
                 });
-            }, 5000),
+            }, 3000),
         });
     }
 
@@ -203,7 +203,7 @@ const styles = StyleSheet.create({
     btnFavorite: {
         height: 25,
         marginTop: 10,
-        width: 150,
+        width: 120,
     },
 
 })

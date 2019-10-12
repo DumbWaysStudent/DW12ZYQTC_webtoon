@@ -15,7 +15,7 @@ class Login extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            isShowPassword: false,
+            isShowPassword: true,
             isValidLogin: false,
             isValidEmail: true,
             emailValue: '',
