@@ -68,7 +68,12 @@ export class MyCreationWebtoon extends Component {
                         bottom: 5,
                         right: 5,
                     }}>
-                    <Icon name="plus-circle" size={60} color="#ff9800" />
+                    <Icon
+                        name="plus-circle"
+                        size={60}
+                        color="#ff9800"
+                        onPress={() => this.props.navigation.navigate('CreateWebtoon')}
+                    />
                 </View>
             </View>
         );
