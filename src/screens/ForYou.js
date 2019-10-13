@@ -48,7 +48,7 @@ class ForYou extends Component {
         };
     }
 
-    UNSAFE_componentWillMount() {
+    componentDidMount() {
         this.setState({
             interval: setInterval(() => {
                 this.setState({
@@ -59,10 +59,6 @@ class ForYou extends Component {
                 });
             }, 3000),
         });
-    }
-
-    UNSAFE_componentWillUnmount() {
-        clearInterval(this.state.interval)
     }
 
     render() {
@@ -99,7 +95,7 @@ class ForYou extends Component {
                                     showsHorizontalScrollIndicator={false}
                                     data={this.state.banners}
                                     renderItem={({ item }) => (
-                                        <TouchableOpacity onPress={() => this.props.navigation.navigate('DetailWebToon')}>
+                                        <TouchableOpacity onPress={() => this.props.navigation.navigate('DetailWebtoon', { item })}>
                                             <View style={styles.favItem}>
                                                 <Image
                                                     style={{ width: 100, height: 100, borderWidth: 3, borderColor: '#795548' }}
