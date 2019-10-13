@@ -8,6 +8,7 @@ import Login from './../screens/Login';
 import ForYou from './../screens/ForYou';
 import DetailWebtoon from './../screens/DetailWebtoon';
 import DetailEpisode from './../screens/DetailEpisode';
+import MyCreationWebtoon from './../screens/MyCreationWebtoon';
 
 const onShare = async () => {
     try {
@@ -73,7 +74,12 @@ const AuthStack = createStackNavigator({
             headerTintColor: '#fff',
         },
     },
-
+    MyCreationWebtoon: {
+        screen: MyCreationWebtoon,
+        navigationOptions: {
+            title: 'My Creation Webtoon'
+        }
+    }
 });
 
 

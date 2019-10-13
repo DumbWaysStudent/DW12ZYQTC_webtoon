@@ -9,7 +9,7 @@ export class Profile extends Component {
                 <View style={styles.header}>
                     <Text style={{ fontSize: 15 }}>Profile</Text>
                     <TouchableWithoutFeedback onPress={() => console.log('edit profile')}>
-                        <Icon name="pencil" size={25} color="#009b00" />
+                        <Icon name="pencil" size={25} color='#795548' />
                     </TouchableWithoutFeedback>
                 </View>
                 <View style={styles.profile}>
@@ -18,7 +18,7 @@ export class Profile extends Component {
                     </View>
                     <Text style={{ fontSize: 23 }}>Your Name</Text>
                 </View>
-                <TouchableWithoutFeedback onPress={() => console.log('change screen')}>
+                <TouchableWithoutFeedback onPress={() => this.props.navigation.navigate('MyCreationWebtoon')}>
                     <View style={[styles.content, { flexDirection: 'row', justifyContent: 'space-between' }]}>
                         <Text style={styles.textContent}>My Webtoon Creation</Text>
                         <Icon name="chevron-right" color='#ccc' size={25} />
